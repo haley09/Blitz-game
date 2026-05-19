@@ -8,21 +8,18 @@ public class GameManager : MonoBehaviour {
   //public GameObject playButton;
   public GameObject quitButton;
   public GameObject gameOver;
-  private float score;
+  private UpdateScore scoreTracker;
 
   private void Awake() {
     Application.targetFrameRate = 60;
+    scoreTracker = GetComponent<UpdateScore>();
     //Pause();
   }
 
   public void Play() {
-    // TODO[]: Fix score after reseting in UpdateScore()
-    // We may need to include this in the same script
-    score = 0;
-    scoreText.text = score.ToString();
+    scoreTracker.ResetScore();
     //playButton.SetActive(false);
     gameOver.SetActive(false);
-    GetComponent<UpdateScore>().Update();
     Time.timeScale = 1f;
     player.enabled = true;
 
@@ -44,11 +41,9 @@ public class GameManager : MonoBehaviour {
   }
 
   public void GameOver() {
-    //Call stop function in update score and reset
     gameOver.SetActive(true);
     //playButton.SetActive(true);
     //Pause();
-    score = 0;
-    scoreText.text = score.ToString();
+    scoreTracker.StopScore();
   }
 }

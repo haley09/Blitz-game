@@ -1,6 +1,6 @@
-# Blitz – Unity Game Project
+# Blitz - Unity Game Project
 
-Blitz is a 2D Unity-based survival game where the player must avoid incoming obstacles while maintaining control of movement and reacting in real time. The game incorporates physics-based movement, dynamic obstacle spawning, and a scoring system tied to survival time.
+Blitz is a 2D Unity survival game where the player avoids incoming obstacles while maintaining control of movement and reacting in real time. The game incorporates physics-based movement, dynamic obstacle spawning, scoring, and menu/game-over UI.
 
 This project demonstrates game development concepts using Unity and C#, including player control, object spawning, UI systems, and game state management.
 
@@ -8,11 +8,11 @@ This project demonstrates game development concepts using Unity and C#, includin
 
 ## Gameplay Overview
 
-- The player controls a character that moves vertically
-- Obstacles spawn and move across the screen
-- The player must avoid collisions to survive
-- Score increases over time based on survival duration
-- The game ends upon collision with an obstacle
+- The player controls a character that moves vertically.
+- Obstacles spawn and move across the screen.
+- The player must avoid collisions to survive.
+- Score increases over time based on survival duration.
+- The game ends upon collision with an obstacle.
 
 ---
 
@@ -20,64 +20,46 @@ This project demonstrates game development concepts using Unity and C#, includin
 
 ### Player Mechanics
 - Physics-based movement using gravity and input
-- Keyboard, mouse, and touch input support :contentReference[oaicite:12]{index=12}  
+- Keyboard, mouse, and touch input support
 
-### Obstacles System
-- Randomized spawning positions and types :contentReference[oaicite:13]{index=13}  
-- Continuous movement and cleanup when off-screen :contentReference[oaicite:14]{index=14}  
+### Obstacle System
+- Randomized spawning positions and obstacle types
+- Continuous obstacle movement and cleanup when off-screen
 
 ### Scoring System
 - Score increases over time
-- Timer-based scoring logic :contentReference[oaicite:15]{index=15}  
+- Timer-based scoring logic
 
 ### Game State Management
-- Central GameManager controls gameplay flow :contentReference[oaicite:16]{index=16}  
-- Restart and game over handling  
+- GameManager controls gameplay flow
+- Restart and game-over handling
 
 ### UI Systems
-- Main menu, pause menu, and game over screen :contentReference[oaicite:17]{index=17} :contentReference[oaicite:18]{index=18}  
-- Settings menu with audio and quality controls :contentReference[oaicite:19]{index=19}  
+- Main menu, pause menu, and game-over screen
+- Settings menu with audio and quality controls
 
 ### Visual Effects
-- Scrolling backgrounds and parallax effects :contentReference[oaicite:20]{index=20}  
+- Scrolling backgrounds and parallax effects
 
 ---
 
 ## Technologies Used
 
-- Unity Engine
+- Unity 2022.3.1f1
 - C#
 - Unity UI System
-- Physics (Rigidbody2D)
+- Physics 2D
 - Scene Management
-
----
-
-## Key Concepts Demonstrated
-
-- Event-driven programming in Unity
-- Game loop and real-time updates
-- Collision detection and triggers
-- Object spawning and lifecycle management
-- UI and menu system integration
-- State management across scenes
 
 ---
 
 ## Author Contributions
 
-#### Haley Abel  
-Worked on core gameplay systems, including:
+Haley Abel worked on core gameplay systems, including:
 - Player movement and input handling
 - Obstacle spawning and behavior
 - Game state logic and UI interactions
 - Score and timer systems
-
----
-
-## Project Context
-
-This project was developed as part of a software development course and later refined for portfolio presentation. It demonstrates foundational game development skills using Unity and C#.
 
 ---
 

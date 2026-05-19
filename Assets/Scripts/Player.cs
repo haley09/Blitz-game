@@ -3,6 +3,8 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
   private SpriteRenderer spriteRenderer;
+  private GameManager gameManager;
+  private Stopwatch stopwatch;
   public Sprite[] sprites;
   private int spriteIndex;
 
@@ -12,6 +14,8 @@ public class Player : MonoBehaviour {
 
   private void Awake() {
     spriteRenderer = GetComponent<SpriteRenderer>();
+    gameManager = FindObjectOfType<GameManager>();
+    stopwatch = FindObjectOfType<Stopwatch>();
   }
 
   private void Start() {
@@ -48,9 +52,9 @@ public class Player : MonoBehaviour {
   }
 
   private void OnTriggerEnter2D(Collider2D other) {
-    if (other.gameObject.tag == "Obstacle") {
-      FindObjectOfType<GameManager>().GameOver();
-      FindObjectOfType<Stopwatch>().Reset();
+    if (other.gameObject.CompareTag("Obstacle")) {
+      gameManager.GameOver();
+      stopwatch.Reset();
     } 
   }
 }
