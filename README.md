@@ -53,13 +53,18 @@ This project demonstrates game development concepts using Unity and C#, includin
 
 ---
 
-## Author Contributions
+## Contributors
 
-Haley Abel worked on core gameplay systems, including:
+- Alison Garrett - project manager and feature support
+- Haley Abel - core gameplay systems, including:
 - Player movement and input handling
 - Obstacle spawning and behavior
 - Game state logic and UI interactions
 - Score and timer systems
+- Samantha Short - team member
+- Justin Akridge - team member
+- Will Chang - team member
+- Sam Odugbesan - team member
 
 ---
 
